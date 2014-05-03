@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BB player</title>
+
+  <script src='lib/jquery.js'></script>
+  <script src='lib/underscore-min.js'></script>
+  <script src='lib/backbone-min.js'></script>
+  <script src='lib/backbone.localStorage.js'></script>
+
+  <script src='data/data.js'></script>
+
+</head>
+<body>
+
+  <script src='models/AppModel.js'></script>
+  <script src='models/CurrentSong.js'></script>
+  <script src='models/Playlist.js'></script>
+  <script src='models/Song.js'></script>
+
+  <script src='collections/Playlists.js'></script>
+  <script src='collections/Songs.js'></script>
+  <script src='collections/SongsQueue.js'></script>
+
+  <script src='views/AppView.js'></script>
+  <script src='views/CurrentSongView.js'></script>
+  <script src='views/LibraryEntryView.js'></script>
+  <script src='views/LibraryView.js'></script>
+  <script src='views/PlayerView.js'></script>
+
+  <script>
+  //Initialization scripts
+  var library = new Songs(songData);
+  var appModel = new AppModel(library);
+  var appView = new AppView({model: appModel});
+
+  $('body').append(appView.$el);
+  
+  </script>
+</body>
+</html
