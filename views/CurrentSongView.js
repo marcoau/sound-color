@@ -5,7 +5,7 @@ var CurrentSongView = Backbone.View.extend({
   initialize: function(){
     this.model.on('change:song', function(){
       this.render();
-    });
+    }, this);
   },
 
   render: function(){
