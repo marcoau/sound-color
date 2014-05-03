@@ -3,6 +3,12 @@
 <head>
   <title>BB player</title>
 
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+
   <script src='lib/jquery.js'></script>
   <script src='lib/underscore-min.js'></script>
   <script src='lib/backbone-min.js'></script>
@@ -13,10 +19,11 @@
 </head>
 <body>
 
+  <script src='models/Song.js'></script>
   <script src='models/AppModel.js'></script>
   <script src='models/CurrentSong.js'></script>
-  <script src='models/Playlist.js'></script>
-  <script src='models/Song.js'></script>
+  <script src='models/NewPlaylist.js'></script>
+  <script src='models/PlaylistModel.js'></script>
 
   <script src='collections/Playlists.js'></script>
   <script src='collections/Songs.js'></script>
@@ -26,7 +33,11 @@
   <script src='views/CurrentSongView.js'></script>
   <script src='views/LibraryEntryView.js'></script>
   <script src='views/LibraryView.js'></script>
+  <script src='views/NewPlaylistEntryView.js'></script>
+  <script src='views/NewPlaylistView.js'></script>
   <script src='views/PlayerView.js'></script>
+  <script src='views/PlaylistsEntryView.js'></script>
+  <script src='views/PlaylistsView.js'></script>
   <script src='views/SongsQueueEntryView.js'></script>
   <script src='views/SongsQueueView.js'></script>
 
